@@ -19,15 +19,12 @@ INSTALACIÓN
 $ git clone https://github.com/SoleAyala/TpSocket-TCP.git
 - En cualquier ide (como Eclipse o Intellij idea) seleccionamos la option File -> Import, y buscamos la carpeta que contiene el proyecto clonado anteriormente ( en caso de Eclipse seleccionar antes Existing Maven Project para la busqueda de carpetas, y en caso de Intellij idea al cargar la carpeta seleccionar la pestaña meaven del costado derecho y cargar cada pom existente.
 - Nos posicionamos dentro de cada proyecto (TcpClient / TcpServer) y ejecutamos en cada uno el siguiente comando:
-$ meaven clean package
+$ mvn clean package
 
 EJECUCIÓN
  
-- Dentro de cada Proyecto (TcpClient / TcpServer) se ha generado un archivo .jar, esos archivos fueron generados mediante el comando "meaven clean package" ejecutado anteriormente.
-- Ejecutar el siguiente comando para levantar el Server:
-$ java -jar server.jar
-- Ejecutar el siguiente comando para levantar el Client: 
-$ java -jar client.jar
+- Dentro de cada Proyecto (TcpClient / TcpServer) se ha generado un archivo .jar, esos archivos fueron generados mediante el comando "mvn clean package" ejecutado anteriormente.
+- Ejecutar cada archivo .java (TcpMultiserver, TcpClient) desde el ide utilizado (button run)
 
 SERVICIOS PROVEÍDOS POR EL SERVIDOR
 
